@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Turismo</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.config-option {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.config-option h2 {
+    font-size: 13px;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+select,
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.10);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Configuración de Turismo</h1>
+    </header>
+
+    <main>
+        <section class="config-option">
+            <h2>Idioma</h2>
+            <select id="idioma">
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+                <option value="fr">Francés</option>
+            </select>
+        </section>
+
+        <section class="config-option">
+            <h2>Preferencias de Viaje</h2>
+            <label for="aventura">Aventura</label>
+            <input type="checkbox" id="aventura">
+            <label for="playa">Playa</label>
+            <input type="checkbox" id="playa">
+            <label for="cultura">Cultura</label>
+            <input type="checkbox" id="cultura">
+        </section>
+    </main>
+
+    <footer>
+        <button id="guardar-configuracion">Guardar Configuración</button>
+    </footer>
+</body>
+</html>
+

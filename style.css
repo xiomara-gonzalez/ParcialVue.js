@@ -1,0 +1,89 @@
+/* Estilos del menú lateral */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0px; /* Ajusta este valor para cambiar la posición vertical del menú */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: left 0.3s, top 0.5s; /* Agregamos una transición para suavizar el movimiento */
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+/* ... (otros estilos) */
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #555;
+}
+
+.sidebar ul li:last-child {
+    border-bottom: none;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Estilos para el botón del menú */
+.menu-button {
+    position: fixed;
+    top: 10px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 50; /* Cambia el valor de z-index a 2 (o mayor si es necesario) */
+}
+
+
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+/* Estilos para el contenido principal */
+main {
+    margin-left: 20px; /* Alinea el contenido principal para que no se solape con el menú */
+}
+
+.menu-logo {
+    width: 210px; /* Ajusta el ancho según tus necesidades */
+    height: 210px; /* Ajusta la altura según tus necesidades */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    margin-right: 10px; /* Espacio entre el logo y el texto del menú */
+    object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo su relación de aspecto */
+    display: block; /* Hace que la imagen sea un bloque */
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-top: calc(50% - 105px); /* Centra verticalmente (la mitad de la altura) */
+}
+/* Estilos para el nombre debajo de la imagen */
+.menu-name {
+    text-align: center; /* Centramos el texto horizontalmente */
+    font-size: 24px; /* Ajusta el tamaño de fuente según tus necesidades */
+    height: 50px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Cambia el color de fondo según tu preferencia */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
